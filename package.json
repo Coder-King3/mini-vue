@@ -1,0 +1,39 @@
+{
+  "name": "king-images",
+  "description": "a bare-bones mini-vue framework implementation",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "build"
+  ],
+  "main": "./build/mini-vue-lib.umd.cjs",
+  "module": "./build/mini-vue-lib.js",
+  "exports": {
+    ".": {
+      "import": "./build/mini-vue-lib.js",
+      "require": "./build/mini-vue-lib.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite serve example",
+    "build": "vite build",
+    "prettier": "prettier --write --loglevel warn \"example/src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\" \"packages/**/*.{js,json,tsx,css,less,scss,vue,html,md}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coder-King3/mini-vue.git"
+  },
+  "author": "king-3",
+  "license": "Mit",
+  "bugs": {
+    "url": "https://github.com/Coder-King3/mini-vue/issues"
+  },
+  "homepage": "https://github.com/Coder-King3/mini-vue#readme",
+  "devDependencies": {
+    "@types/node": "^20.8.7",
+    "less": "^4.2.0",
+    "prettier": "^3.0.3",
+    "vite": "^4.4.5"
+  }
+}
