@@ -76,7 +76,7 @@ export function reactive(raw) {
       const dep = getDep(target, key)
       dep.notify()
 
-      // 3.返回修噶是否成功
+      // 3.返回修改是否成功
       return status
     }
   })
